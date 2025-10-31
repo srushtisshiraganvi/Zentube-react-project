@@ -1,4 +1,5 @@
-/* General Reset */
+/* Zentube Blue Theme UI */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,105 +12,132 @@ body {
   color: #fff;
 }
 
-/* Header / Title */
+/* Header / Navbar */
 .app-header {
+  background: linear-gradient(90deg, #0f172a, #1e3a8a);
   text-align: center;
-  margin-bottom: 25px;
+  padding: 20px 0;
+  border-bottom: 2px solid #38bdf8;
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3);
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #38bdf8;
-  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
 }
 
 .tagline {
+  color: #cbd5e1;
   font-size: 1rem;
-  color: #94a3b8;
   margin-top: 5px;
 }
 
-/* Container Layout */
+/* Layout */
 .container {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 article {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
 }
 
-/* Video Player Section */
+/* Main Player */
 #play {
-  flex: 1 1 55%;
+  flex: 1 1 60%;
   background: #1e293b;
-  border-radius: 20px;
   padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
 }
 
-#play video {
-  border-radius: 12px;
+video {
   width: 100%;
-  max-width: 640px;
+  border-radius: 10px;
   outline: none;
 }
 
-/* Thumbnails Section */
+.video-details {
+  margin-top: 15px;
+}
+
+.video-details h2 {
+  color: #f8fafc;
+  margin-bottom: 6px;
+}
+
+.video-meta,
+.video-author {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.video-description {
+  margin-top: 10px;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+/* Sidebar */
 #images {
-  flex: 1 1 40%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 20px;
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   overflow-y: auto;
-  padding: 10px;
-  max-height: 550px;
+  max-height: 700px;
+  scrollbar-color: #38bdf8 #1e293b;
+  scrollbar-width: thin;
 }
 
-/* Video Card */
-.video-card {
+/* Side Video Cards */
+.video-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
   background: #1e293b;
-  border-radius: 14px;
-  overflow: hidden;
+  border-radius: 10px;
+  padding: 8px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
 }
 
-.video-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+.video-item:hover {
+  background: #334155;
+  border-left: 3px solid #38bdf8;
+  transform: translateY(-3px);
 }
 
-.video-card img {
-  width: 100%;
-  height: 120px;
+.video-item img {
+  width: 160px;
+  height: 95px;
+  border-radius: 6px;
   object-fit: cover;
 }
 
-.video-info {
-  padding: 10px;
-  text-align: center;
-}
-
-.video-info h1 {
+.video-info h3 {
   font-size: 0.9rem;
-  color: #e2e8f0;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  color: #f1f5f9;
+  margin-bottom: 4px;
 }
 
-.video-card:hover .video-info h1 {
-  color: #38bdf8;
+.video-info p {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.video-info .meta {
+  font-size: 0.75rem;
+  color: #64748b;
 }
 
 /* Responsive */
@@ -124,7 +152,12 @@ article {
     max-height: none;
   }
 
-  #play {
+  .video-item {
+    flex-direction: column;
+  }
+
+  .video-item img {
     width: 100%;
+    height: 150px;
   }
 }
