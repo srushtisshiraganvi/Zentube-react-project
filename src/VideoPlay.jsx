@@ -1,11 +1,9 @@
 import React from 'react'
 
-const VideoPlay = (props) => {
+const VideoPlay = ({ play }) => {
   return (
-    <div>
-        {
-            <video height={300} width={400} controls autoPlay muted src={props.play}></video>
-        }
+    <div className='video-player'>
+      <video controls autoPlay muted src={play}></video>
     </div>
   )
 }
