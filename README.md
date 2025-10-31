@@ -5,7 +5,7 @@ It features a clean **blue-themed interface**, a responsive design, and smooth u
 
 ---
 
-## 🌟 Features
+## Features
 
 ✅ Elegant **blue neon UI** inspired by modern media platforms  
 ✅ Play, pause, and switch between videos dynamically  
@@ -16,18 +16,18 @@ It features a clean **blue-themed interface**, a responsive design, and smooth u
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- ⚛️ **React.js** – Frontend framework  
-- 🎨 **CSS3** – Custom styling (no external UI library)  
-- 🧠 **useState Hook** – For managing video state dynamically  
-- 📁 **JSON** – For video metadata (titles, thumbnails, URLs)
+-  **React.js** – Frontend framework  
+-  **CSS3** – Custom styling (no external UI library)  
+-  **useState Hook** – For managing video state dynamically  
+-  **JSON** – For video metadata (titles, thumbnails, URLs)
 
 ---
 
 ## 🚀 Getting Started
 
-### 1️⃣ Clone the Repository
+###  Clone the Repository
 ```
 # Clone this repository
 git clone https://github.com/yourusername/zentube.git
