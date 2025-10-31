@@ -1,12 +1,43 @@
-# React + Vite
+# 🎬 Zentube – A Modern Video Player App (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Zentube is a modern and minimalist **YouTube-style video player app** built using **React.js**.  
+It features a clean **blue-themed interface**, a responsive design, and smooth user interaction for switching between videos — perfect for learning and entertainment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+✅ Elegant **blue neon UI** inspired by modern media platforms  
+✅ Play, pause, and switch between videos dynamically  
+✅ Responsive layout for desktop and mobile  
+✅ Side panel with video thumbnails and metadata  
+✅ Smooth hover animations and glowing effects  
+✅ Built entirely with **React hooks and components**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ **React.js** – Frontend framework  
+- 🎨 **CSS3** – Custom styling (no external UI library)  
+- 🧠 **useState Hook** – For managing video state dynamically  
+- 📁 **JSON** – For video metadata (titles, thumbnails, URLs)
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+```
+# Clone this repository
+git clone https://github.com/yourusername/zentube.git
+
+# Go inside the folder
+cd zentube
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
